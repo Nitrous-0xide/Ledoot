@@ -6,7 +6,82 @@
     <title>Tristan Link</title>
     <style>
         :root {
+            --color-background: #31037D;<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristan link</title>
+    <style>
+        :root {
             --color-background: #31037D;
+            --color-black: #fa2a77;
+            --color-white: #fa5290;
+            --color-orange: #fc79aa;
+            --color-red: #ff8ab5;
+            --color-violet: #faa0c1;
+            --color-blue: #ffbad4;
+            --color-green: #ffd6e5;
+            --color-yellow: #ffffff;
+            --color-foreground: var(--color-white);
+            --font-name: Righteous;
+        }
+
+        html, body {
+            font-size: 24px;
+            background-color: var(--color-background);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-name);
+            height: 100vh;
+        }
+
+        .c-rainbow {
+            position: relative;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .c-rainbow__layer {
+            font-size: 3rem;
+            color: var(--color-foreground);
+            text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black),
+                         -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black),
+                         4px 4px 0 rgba(0, 0, 0, .2);
+            animation: rainbow 1.5s ease-in-out infinite;
+            position: absolute;
+            top: 0;
+        }
+
+        @keyframes rainbow {
+            0%, 100% { transform: translateY(1rem); }
+            50% { transform: translateY(-1rem); }
+        }
+
+        .c-rainbow__layer:nth-child(1) { color: var(--color-white); animation-delay: 0s; }
+        .c-rainbow__layer:nth-child(2) { color: var(--color-orange); animation-delay: 0.1s; }
+        .c-rainbow__layer:nth-child(3) { color: var(--color-red); animation-delay: 0.2s; }
+        .c-rainbow__layer:nth-child(4) { color: var(--color-violet); animation-delay: 0.3s; }
+        .c-rainbow__layer:nth-child(5) { color: var(--color-blue); animation-delay: 0.4s; }
+        .c-rainbow__layer:nth-child(6) { color: var(--color-green); animation-delay: 0.5s; }
+        .c-rainbow__layer:nth-child(7) { color: var(--color-yellow); animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <ul class="c-rainbow">
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+        <li class="c-rainbow__layer">TRISTAN IRRITATES ME</li>
+    </ul>
+</body>
+</html>
+
             --color-gradient: linear-gradient(to bottom, pink, white);
             --axis-x: 1px;
             --axis-y: 1rem;
