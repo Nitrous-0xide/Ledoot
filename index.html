@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ledoot.xyz</title>
+  <style>
+    .main {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>Welcome to ledoot.xyz!</h1>
+    <h2>If you got a code type it in. If you dont just find one, I didnt secure them.</h2>
+    <input type="text" id="codeInput" placeholder="Enter your code here">
+    <button onclick="checkCode()">Submit</button>
+  </div>
+  
+  <script>
+    function checkCode() {
+      const code = document.getElementById('codeInput').value;
+      switch(code) {
+        case 'tristanlink':
+          window.location.href = 'https://7d120e09-f591-4444-bc4c-dc93132f8a6c-00-2w4xrgtqkq3un.kirk.replit.dev/082wq74ty0w7yhftg02w897y5t3029twy74.html';
+          break;
+        case 'R6SSTRATS':
+          window.location.href = 'https://7d120e09-f591-4444-bc4c-dc93132f8a6c-00-2w4xrgtqkq3un.kirk.replit.dev/ali37wrypq9io37hfp9q.html';
+          break;
+        case 'llamafacts':
+          window.location.href = 'https://7d120e09-f591-4444-bc4c-dc93132f8a6c-00-2w4xrgtqkq3un.kirk.replit.dev/oa87W40W8YGF08e7fgw.html';
+          break;
+        default:
+          alert('Invalid code');
+      }
+    }
+  </script>
+</body>
+</html>

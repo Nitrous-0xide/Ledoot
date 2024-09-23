@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R6 Strat Selector</title>
+   
+    <script>
+        function getStrategy() {
+            const strategies = {
+                1: "Bomb Rush: Glaz + Sledge [ATTACK]",
+                2: "Surprise: Castle + Ela [DEFENSE]",
+                3: "Wall Hacks: IQ + Dokkaebi [ATTACK]",
+                4: "Hidden Bang: Fuze + Ying [ATTACK]",
+                5: "Juggernaut: Doc + Rook [DEFENSE]",
+                6: "Antiflash: Wamai + Warden [DEFENSE]",
+                7: "Frag Anywhere: Osa + Fuze [ATTACK]",
+                8: "Quick Breach: Thermite + Ash [ATTACK]",
+                9: "Distraction: Blitz + Montagne [ATTACK]",
+                10: "Intel Denial: Mute + Mozzie [DEFENSE]",
+                11: "Flank Watch: Nomad + Gridlock [ATTACK]",
+                12: "Area Denial: Smoke + Goyo [DEFENSE]",
+                13: "Silent Entry: Nokk + Maverick [ATTACK]",
+                14: "Roam Clear: Jackal + Lion [ATTACK]",
+                15: "Bulletproof: Alibi + Maestro [DEFENSE]",
+                16: "Hard Hold: Jäger + Bandit [DEFENSE]",
+                17: "Quick Peek: Kali + Twitch [ATTACK]",
+                18: "Panic Room: Tachanka + Frost [DEFENSE]"
+            };
+
+            const stratNumber = document.getElementById('stratNumber').value;
+            const strategy = strategies[stratNumber];
+
+            if (strategy) {
+                alert(strategy);
+            } else {
+                alert('Invalid strategy number. Please enter a number between 1 and 18.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Rainbow Six Siege Strat Selector</h1>
+    <label for="stratNumber">Enter Strategy Number (1-18):</label>
+    <input type="number" id="stratNumber" min="1" max="18">
+    <button onclick="getStrategy()">Quick find</button>
+</body>
+     <p>1: "Bomb Rush: Glaz + Sledge [ATTACK]",
+         <br>
+        2: "Surprise: Castle + Ela [DEFENSE]",
+         <br>
+        3: "Wall Hacks: IQ + Dokkaebi [ATTACK]",
+         <br>
+        4: "Hidden Bang: Fuze + Ying [ATTACK]",<br>
+        5: "Juggernaut: Doc + Rook [DEFENSE]",<br>
+        6: "Antiflash: Wamai + Warden [DEFENSE]",<br>
+        7: "Frag Anywhere: Osa + Fuze [ATTACK]",<br>
+        8: "Quick Breach: Thermite + Ash [ATTACK]",<br>
+        9: "Distraction: Blitz + Montagne [ATTACK]",<br>
+        10: "Intel Denial: Mute + Mozzie [DEFENSE]",<br>
+        11: "Flank Watch: Nomad + Gridlock [ATTACK]",<br>
+        12: "Area Denial: Smoke + Goyo [DEFENSE]",<br>
+        13: "Silent Entry: Nokk + Maverick [ATTACK]",<br>
+        14: "Roam Clear: Jackal + Lion [ATTACK]",<br>
+        15: "Bulletproof: Alibi + Maestro [DEFENSE]",<br>
+        16: "Hard Hold: Jäger + Bandit [DEFENSE]",<br>
+        17: "Quick Peek: Kali + Twitch [ATTACK]",<br>
+        18: "Panic Room: Tachanka + Frost [DEFENSE]"</p>
+</html>
