@@ -6,16 +6,4 @@ Or you can download and edit it yourself, add custom pages and codes etc.
 <br>
 Recently Moved to github from replit becuase hosting isn't free anymore.
 <br>
-UPDATE LOG:
-<br>
-V0.0.1 - Transfered Over from Replit
-<br>
-V0.1.0 - Deployed on Vercel
-<br>
-V0.1.1 - Created README 
-<br>
-V1.0.0 - Created code: Javelin
-<br>
-V1.1.0 - Coded Javelin.html
-<br>
-V2.0.0 - Renamed all files to be easier to read.
+Get update log and all codes using code: UPDATELOG
